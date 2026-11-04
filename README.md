@@ -52,10 +52,19 @@ Re-derives everything from a live Concordium testnet gRPC node — see
 node action-ref/compose.mjs
 ```
 
-Re-runs the verifier fresh, then builds (but does not anchor) the WHO+WHAT decision record and its
-digest — see [PROVENANCE.md](PROVENANCE.md#composition-who--what).
+Re-runs the verifier fresh, then builds the WHO+WHAT decision record and its digest. The script
+itself never broadcasts anything — the digest from one of its runs was anchored separately (see
+below), the same way every other anchor in this project's history has required its own explicit
+step.
 
 ## Status
 
-Verified end to end; not yet anchored on-chain, not yet published anywhere. See
-[PROVENANCE.md](PROVENANCE.md#what-remains-before-this-is-a-complete-published-worked-example).
+Verified end to end, anchored, and published:
+
+- Anchor tx: `0x6952def39fe2b07d75a9e4bc07abb36effc6ad64229a84e228cdf71893268a53`, Base mainnet,
+  block `53511499` — digest `092aaeb2725b355ca49bab7358cec9a8aae3d54c7fa08ee7d7c7b7d7f9e37288`,
+  verified independently against public RPC (see
+  [PROVENANCE.md](PROVENANCE.md#composition-who--what)).
+- This repository is public. What's still undecided is *who we actively show it to* — that's a
+  separate call, not yet made (see
+  [PROVENANCE.md](PROVENANCE.md#what-remains-before-this-is-a-complete-published-worked-example)).
