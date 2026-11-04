@@ -10,6 +10,11 @@ on the EVM side. `action-ref/compose.mjs` composes the two: it re-verifies the C
 every run, and only then builds the digest that would be anchored (see
 [PROVENANCE.md](PROVENANCE.md#composition-who--what)).
 
+**What the anchored record does NOT claim**: that the agent executed anything. It only asserts that
+the CIS-8004 registration exists, is `Active`, and its CIS-8 binding is valid — each independently
+re-verified against the live chain right before anchoring. No task, payment, or tool call is being
+attested here.
+
 This is our own initiative, unconnected to Concordium's "Trusted Agents Hackathon" — see
 [PROVENANCE.md](PROVENANCE.md) for exactly why, what's real vs. disposable test material, and a
 real bug we found in Concordium's own tooling along the way.
