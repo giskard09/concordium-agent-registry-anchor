@@ -1,0 +1,18 @@
+{
+  "name": "concordium-agent-registry-anchor",
+  "version": "1.0.0",
+  "description": "Worked example: CIS-8004 agent registration on Concordium testnet, bound via CIS-8 to a disposable Ethereum test key",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "verify": "node verifier/verify.mjs"
+  },
+  "keywords": [],
+  "author": "giskard09",
+  "license": "MIT",
+  "dependencies": {
+    "@concordium/web-sdk": "^12.0.2",
+    "@grpc/grpc-js": "^1.14.7",
+    "ethers": "^6.17.0"
+  }
+}

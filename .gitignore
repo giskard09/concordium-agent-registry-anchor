@@ -1,0 +1,12 @@
+node_modules/
+*.hex
+*wallet*.json
+identity_request.json
+identity_object.json
+cred_payload.json
+cred_signature.txt
+account_address.txt
+account_signing_key.hex
+state.txt
+body.json
+verify_form.html

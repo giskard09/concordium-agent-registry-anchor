@@ -1,0 +1,41 @@
+{
+  "action_ref_version": "v1",
+  "composition": "concordium-cis8004-who + action_ref-what",
+  "who": {
+    "chain": "concordium",
+    "network": "testnet",
+    "genesis_hash": "4221332d34e1694168c2a0c0b3fd0f273809612cb13d000d5c2e00e85f50f796",
+    "cis8004_contract": {
+      "index": 12802,
+      "subindex": 0
+    },
+    "cis8_contract": {
+      "index": 12801,
+      "subindex": 0
+    },
+    "agent": {
+      "token_id": 998,
+      "token_address": "JyP9YE9hRnZ7H2aBxHSYU",
+      "owner_account": "3AmkVPMpkQoP1bnxrqWRR7G7KBBa1UxCXsmUReCGy5a8KhAcij",
+      "status": "Active"
+    },
+    "external_reference": {
+      "kind": "Cis8",
+      "namespace": "eip155:8453",
+      "key_type": "secp256k1-uncompressed",
+      "public_key_hex": "04bfab283577bc5568c4509e5c3ae10eee1c87431c30f95e8d4084bf667aae58f8e6b3b5bc6b6de3136e821643c8bf4d079169e7d5bce0b38c4c3adc702135236e"
+    },
+    "on_chain_evidence": {
+      "cis8_register_tx": "750949e22689cae371a020783ef343178f1baab5f0fb9e844f30e528122b6bb9",
+      "cis8004_register_tx": "f5dce64395e5a76773041142b43aab86ae639cecac60d67a6da57ce2e81a4642"
+    }
+  },
+  "decision": "proceed",
+  "gate": {
+    "independent_concordium_reverification_passed": true
+  },
+  "note": "The WHO record (Concordium CIS-8004 agent 998, CIS-8 binding) was independently re-verified against the live testnet chain immediately before this record was built. This record does not claim the agent DID anything beyond existing, verified, as registered -- that claim is deliberately modest, matching what a testnet identity registration can honestly support.",
+  "decided_at_utc": "2026-11-04T17:08:55.619Z",
+  "digest_sha256": "092aaeb2725b355ca49bab7358cec9a8aae3d54c7fa08ee7d7c7b7d7f9e37288",
+  "_canonical_json": "{\"action_ref_version\":\"v1\",\"composition\":\"concordium-cis8004-who + action_ref-what\",\"decided_at_utc\":\"2026-11-04T17:08:55.619Z\",\"decision\":\"proceed\",\"gate\":{\"independent_concordium_reverification_passed\":true},\"note\":\"The WHO record (Concordium CIS-8004 agent 998, CIS-8 binding) was independently re-verified against the live testnet chain immediately before this record was built. This record does not claim the agent DID anything beyond existing, verified, as registered -- that claim is deliberately modest, matching what a testnet identity registration can honestly support.\",\"who\":{\"agent\":{\"owner_account\":\"3AmkVPMpkQoP1bnxrqWRR7G7KBBa1UxCXsmUReCGy5a8KhAcij\",\"status\":\"Active\",\"token_address\":\"JyP9YE9hRnZ7H2aBxHSYU\",\"token_id\":998},\"chain\":\"concordium\",\"cis8004_contract\":{\"index\":12802,\"subindex\":0},\"cis8_contract\":{\"index\":12801,\"subindex\":0},\"external_reference\":{\"key_type\":\"secp256k1-uncompressed\",\"kind\":\"Cis8\",\"namespace\":\"eip155:8453\",\"public_key_hex\":\"04bfab283577bc5568c4509e5c3ae10eee1c87431c30f95e8d4084bf667aae58f8e6b3b5bc6b6de3136e821643c8bf4d079169e7d5bce0b38c4c3adc702135236e\"},\"genesis_hash\":\"4221332d34e1694168c2a0c0b3fd0f273809612cb13d000d5c2e00e85f50f796\",\"network\":\"testnet\",\"on_chain_evidence\":{\"cis8004_register_tx\":\"f5dce64395e5a76773041142b43aab86ae639cecac60d67a6da57ce2e81a4642\",\"cis8_register_tx\":\"750949e22689cae371a020783ef343178f1baab5f0fb9e844f30e528122b6bb9\"}}}"
+}
